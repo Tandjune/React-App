@@ -1,0 +1,32 @@
+.ChannelButton {
+  display: flex;
+  flex-direction: row;
+  border: 0 solid gray;
+  height: 40px;
+  border-radius: 25px;
+  margin: 5px 4px;
+  box-shadow: 2px 0px 5px 1px rgba(131, 128, 128, 0.85);
+  align-items: center;
+
+  button {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: white;
+    color: rgb(158, 149, 149);
+  }
+
+  label{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: {
+      left: 2px;
+      right: 18px;
+    }
+  }
+
+}

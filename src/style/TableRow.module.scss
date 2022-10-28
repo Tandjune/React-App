@@ -1,0 +1,47 @@
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin tableRow {
+  @include flexRow;
+  display: flex;
+  box-shadow: -2px 5px 5px 5px rgb(218, 214, 214, 0.85);
+  margin-bottom: 30px;
+  height: 90px;
+  border: 1px solid rgb(240, 240, 240, 0.9);
+  border-radius: 8px;
+
+}
+
+.rowContainer {
+  @include tableRow;
+  justify-content: space-between;
+  padding: 0 8px 0 25px;
+
+  .rowRight {
+    @include flexRow;
+    width: 50%;
+
+
+    .inputFields {
+      @include flexRow;
+      justify-content: space-between;
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      width: 30px;
+      font-size: 20px;
+      color: white;
+      background-color: rgb(150, 147, 147);
+      border-radius: 50%;
+    }
+
+  }
+}
